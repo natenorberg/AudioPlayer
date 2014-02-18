@@ -22,6 +22,8 @@
 		EB6D51C618B1E0B7002B24F7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D51A518B1E0B7002B24F7 /* UIKit.framework */; };
 		EB6D51CE18B1E0B7002B24F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB6D51CC18B1E0B7002B24F7 /* InfoPlist.strings */; };
 		EB6D51D018B1E0B7002B24F7 /* AudioPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6D51CF18B1E0B7002B24F7 /* AudioPlayerTests.m */; };
+		EB6D51DA18B1E0C5002B24F7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB6D51D918B1E0C5002B24F7 /* AVFoundation.framework */; };
+		EB6D51DD18B1E2D9002B24F7 /* synth_strings.aiff in Resources */ = {isa = PBXBuildFile; fileRef = EB6D51DC18B1E2D9002B24F7 /* synth_strings.aiff */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		EB6D51CB18B1E0B7002B24F7 /* AudioPlayerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AudioPlayerTests-Info.plist"; sourceTree = "<group>"; };
 		EB6D51CD18B1E0B7002B24F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EB6D51CF18B1E0B7002B24F7 /* AudioPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerTests.m; sourceTree = "<group>"; };
+		EB6D51D918B1E0C5002B24F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		EB6D51DC18B1E2D9002B24F7 /* synth_strings.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = synth_strings.aiff; path = ../../SeniorProject/Resources/synth_strings.aiff; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB6D51DA18B1E0C5002B24F7 /* AVFoundation.framework in Frameworks */,
 				EB6D51A418B1E0B7002B24F7 /* CoreGraphics.framework in Frameworks */,
 				EB6D51A618B1E0B7002B24F7 /* UIKit.framework in Frameworks */,
 				EB6D51A218B1E0B7002B24F7 /* Foundation.framework in Frameworks */,
@@ -103,6 +108,7 @@
 		EB6D51A018B1E0B7002B24F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB6D51D918B1E0C5002B24F7 /* AVFoundation.framework */,
 				EB6D51A118B1E0B7002B24F7 /* Foundation.framework */,
 				EB6D51A318B1E0B7002B24F7 /* CoreGraphics.framework */,
 				EB6D51A518B1E0B7002B24F7 /* UIKit.framework */,
@@ -114,6 +120,7 @@
 		EB6D51A718B1E0B7002B24F7 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				EB6D51DB18B1E2CA002B24F7 /* Resources */,
 				EB6D51B018B1E0B7002B24F7 /* NNAppDelegate.h */,
 				EB6D51B118B1E0B7002B24F7 /* NNAppDelegate.m */,
 				EB6D51B318B1E0B7002B24F7 /* Main_iPhone.storyboard */,
@@ -153,6 +160,14 @@
 				EB6D51CC18B1E0B7002B24F7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EB6D51DB18B1E2CA002B24F7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EB6D51DC18B1E2D9002B24F7 /* synth_strings.aiff */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB6D51B818B1E0B7002B24F7 /* Main_iPad.storyboard in Resources */,
+				EB6D51DD18B1E2D9002B24F7 /* synth_strings.aiff in Resources */,
 				EB6D51BD18B1E0B7002B24F7 /* Images.xcassets in Resources */,
 				EB6D51B518B1E0B7002B24F7 /* Main_iPhone.storyboard in Resources */,
 				EB6D51AC18B1E0B7002B24F7 /* InfoPlist.strings in Resources */,

@@ -18,6 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _volume = 0.5;
+    
+    NSString *path = [NSString stringWithFormat:@"%@/synth_strings.aiff", [[NSBundle mainBundle] resourcePath]];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    
+    NSError *error;
+    audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    audioPlayer.numberOfLoops = -1;
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +35,14 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)volumeChanged:(id)sender {
+    UISlider *slider = (UISlider*)sender;
+    
+    [self setVolume:slider.value];
+    audioPlayer.volume = _volume;
+}
+
+- (IBAction)playSound:(UIButton *)sender {
+    [audioPlayer play];
+}
 @end

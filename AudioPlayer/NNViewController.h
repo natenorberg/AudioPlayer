@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface NNViewController : UIViewController
+@interface NNViewController : UIViewController {
+    AVAudioPlayer *audioPlayer;
+}
+@property (weak, nonatomic) IBOutlet UIButton *playButtonView;
+@property (weak, nonatomic) IBOutlet UISlider *volumeFader;
+@property (assign) float volume;
+
+- (IBAction)volumeChanged:(id)sender;
+- (IBAction)playSound:(UIButton *)sender;
 
 @end
