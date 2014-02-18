@@ -43,6 +43,13 @@
 }
 
 - (IBAction)playSound:(UIButton *)sender {
-    [audioPlayer play];
+    if ([audioPlayer isPlaying]) {
+        [audioPlayer stop];
+        [[self playButtonView] setTitle:@"Play Audio" forState:UIControlStateNormal];
+    }
+    else {
+        [audioPlayer play];
+        [[self playButtonView] setTitle:@"Pause Audio" forState:UIControlStateNormal];
+    }
 }
 @end
