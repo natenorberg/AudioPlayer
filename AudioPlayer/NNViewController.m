@@ -52,4 +52,19 @@
         [[self playButtonView] setTitle:@"Pause Audio" forState:UIControlStateNormal];
     }
 }
+
+//-(void)initializeAUOutput {
+//    AudioComponentDescription description;
+//    AudioComponent component;
+//    
+//    description.componentType = kAudioUnitSubType_GenericOutput;
+//    description.componentManufacturer = kAudioUnitManufacturer_Apple;
+//    description.componentFlags = 0;
+//    description.componentFlagsMask = 0;
+//    
+//    component = FindNextComponent(NULL, &description);
+//    if (component == NULL) exit(-1);
+//    
+//    err = OpenAComponent(component, theOutputUnit);
+//}
 @end

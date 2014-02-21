@@ -59,6 +59,7 @@
 		EB6D51CF18B1E0B7002B24F7 /* AudioPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioPlayerTests.m; sourceTree = "<group>"; };
 		EB6D51D918B1E0C5002B24F7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		EB6D51DC18B1E2D9002B24F7 /* synth_strings.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; name = synth_strings.aiff; path = ../../SeniorProject/Resources/synth_strings.aiff; sourceTree = "<group>"; };
+		EBE1F59B18B5235500CDB516 /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +109,7 @@
 		EB6D51A018B1E0B7002B24F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EBE1F59B18B5235500CDB516 /* AudioUnit.framework */,
 				EB6D51D918B1E0C5002B24F7 /* AVFoundation.framework */,
 				EB6D51A118B1E0B7002B24F7 /* Foundation.framework */,
 				EB6D51A318B1E0B7002B24F7 /* CoreGraphics.framework */,
@@ -491,6 +493,7 @@
 				EB6D51D518B1E0B7002B24F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB6D51D618B1E0B7002B24F7 /* Build configuration list for PBXNativeTarget "AudioPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +502,7 @@
 				EB6D51D818B1E0B7002B24F7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
